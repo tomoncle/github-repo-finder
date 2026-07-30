@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="100%">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#58a6ff"/>
+      <stop offset="100%" stop-color="#3fb950"/>
+    </linearGradient>
+    <linearGradient id="termBar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d333b"/>
+      <stop offset="100%" stop-color="#22272e"/>
+    </linearGradient>
+    <clipPath id="roundTerm">
+      <rect x="620" y="100" width="520" height="320" rx="12"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="520" fill="url(#bg)" rx="0"/>
+
+  <!-- Subtle grid dots -->
+  <g opacity="0.06">
+    <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="1.5" fill="#c9d1d9"/>
+    </pattern>
+    <rect width="1200" height="520" fill="url(#dots)"/>
+  </g>
+
+  <!-- Decorative stars scattered -->
+  <g opacity="0.15" fill="#e3b341">
+    <path d="M90 80l3 6.5 7 1-5 5 1.2 7-6.2-3.3L84 100l1.2-7-5-5 7-1z" transform="scale(0.8)"/>
+    <path d="M180 420l3 6.5 7 1-5 5 1.2 7-6.2-3.3-6.2 3.3 1.2-7-5-5 7-1z" transform="scale(0.6) translate(100,50)"/>
+    <path d="M520 60l3 6.5 7 1-5 5 1.2 7-6.2-3.3-6.2 3.3 1.2-7-5-5 7-1z" transform="scale(0.7) translate(30,10)"/>
+  </g>
+
+  <!-- Left side: Title block -->
+  <rect x="60" y="105" width="130" height="28" rx="14" fill="none" stroke="#58a6ff" stroke-width="1.5" opacity="0.7"/>
+  <text x="125" y="124" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#58a6ff" letter-spacing="1">CODEX SKILL</text>
+
+  <!-- Title -->
+  <text x="60" y="195" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="52" font-weight="800" fill="#f0f6fc" letter-spacing="-1">GitHub Repo</text>
+  <text x="60" y="255" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="52" font-weight="800" fill="url(#accent)" letter-spacing="-1">Finder</text>
+
+  <!-- Tagline -->
+  <text x="60" y="305" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="18" fill="#8b949e">Find freshly <tspan fill="#f0f6fc" font-weight="600">created</tspan> repositories —</text>
+  <text x="60" y="332" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="18" fill="#8b949e">not just recently updated ones.</text>
+
+  <!-- Feature pills -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5">
+    <rect x="60" y="370" width="145" height="30" rx="15" fill="#1c2333" stroke="#30363d" stroke-width="1"/>
+    <text x="80" y="390" fill="#e3b341">★</text>
+    <text x="96" y="390" fill="#c9d1d9">star filter</text>
+
+    <rect x="218" y="370" width="155" height="30" rx="15" fill="#1c2333" stroke="#30363d" stroke-width="1"/>
+    <text x="238" y="390" fill="#3fb950">⊕</text>
+    <text x="256" y="390" fill="#c9d1d9">keyword search</text>
+
+    <rect x="386" y="370" width="155" height="30" rx="15" fill="#1c2333" stroke="#30363d" stroke-width="1"/>
+    <text x="406" y="390" fill="#58a6ff">◷</text>
+    <text x="424" y="390" fill="#c9d1d9">created:&gt;=date</text>
+  </g>
+
+  <!-- Right side: Terminal window -->
+  <g clip-path="url(#roundTerm)">
+    <rect x="620" y="100" width="520" height="320" fill="#0d1117"/>
+    <rect x="620" y="100" width="520" height="38" fill="url(#termBar)"/>
+    <circle cx="646" cy="119" r="6" fill="#f85149" opacity="0.9"/>
+    <circle cx="668" cy="119" r="6" fill="#e3b341" opacity="0.9"/>
+    <circle cx="690" cy="119" r="6" fill="#3fb950" opacity="0.9"/>
+    <text x="880" y="124" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#8b949e">search_recent_repos.py</text>
+  </g>
+  <rect x="620" y="100" width="520" height="320" rx="12" fill="none" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- Terminal content -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5">
+    <text x="648" y="172" fill="#3fb950">$</text>
+    <text x="666" y="172" fill="#f0f6fc">python3 scripts/search_recent_repos.py \</text>
+    <text x="680" y="196" fill="#79c0ff">--days</text>
+    <text x="740" y="196" fill="#f0f6fc">2</text>
+    <text x="762" y="196" fill="#79c0ff">--min-stars</text>
+    <text x="870" y="196" fill="#f0f6fc">500</text>
+    <text x="910" y="196" fill="#79c0ff">--keywords</text>
+    <text x="1010" y="196" fill="#a5d6ff">ai skill</text>
+
+    <text x="648" y="232" fill="#484f58">──────────────────────────────────────────</text>
+
+    <text x="648" y="258" fill="#8b949e">Query: created:&gt;=2026-07-28 stars:&gt;499 ai skill</text>
+    <text x="648" y="280" fill="#8b949e">Total matched: 42</text>
+
+    <text x="648" y="310" fill="#e3b341" font-weight="600">项目地址</text>
+    <text x="830" y="310" fill="#e3b341" font-weight="600">创建时间</text>
+    <text x="950" y="310" fill="#e3b341" font-weight="600">Star数量</text>
+    <text x="1050" y="310" fill="#e3b341" font-weight="600">仓库名称</text>
+
+    <text x="648" y="336" fill="#58a6ff">github.com/…</text>
+    <text x="830" y="336" fill="#c9d1d9">2026-07-29</text>
+    <text x="950" y="336" fill="#3fb950">★ 2,816</text>
+    <text x="1050" y="336" fill="#c9d1d9">agent-hub</text>
+
+    <text x="648" y="360" fill="#58a6ff">github.com/…</text>
+    <text x="830" y="360" fill="#c9d1d9">2026-07-28</text>
+    <text x="950" y="360" fill="#3fb950">★ 1,207</text>
+    <text x="1050" y="360" fill="#c9d1d9">skill-forge</text>
+
+    <text x="648" y="384" fill="#58a6ff">github.com/…</text>
+    <text x="830" y="384" fill="#c9d1d9">2026-07-29</text>
+    <text x="950" y="384" fill="#3fb950">★   963</text>
+    <text x="1050" y="384" fill="#c9d1d9">codex-tools</text>
+
+    <rect x="648" y="396" width="9" height="17" fill="#3fb950" opacity="0.8" rx="1"/>
+  </g>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="514" width="1200" height="6" fill="url(#accent)" opacity="0.6"/>
+</svg>

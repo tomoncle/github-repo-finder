@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" width="100%">
+  <rect width="1200" height="100" fill="#0d1117"/>
+  <rect x="0" y="94" width="1200" height="6" fill="#161b22"/>
+  <!-- Number badge -->
+  <rect x="60" y="28" width="44" height="44" rx="10" fill="#1c2333" stroke="#3fb950" stroke-width="1.5"/>
+  <text x="82" y="58" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="700" fill="#3fb950">1</text>
+  <!-- Title -->
+  <text x="124" y="58" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#f0f6fc">Quick Start</text>
+  <!-- Accent dash -->
+  <rect x="124" y="70" width="60" height="3" rx="1.5" fill="#3fb950" opacity="0.6"/>
+  <!-- Right decoration: prompt -->
+  <text x="1100" y="58" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" fill="#30363d">$ _</text>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="100%">
+  <rect width="1200" height="200" fill="#0d1117" rx="12"/>
+  <rect x="0.5" y="0.5" width="1199" height="199" rx="12" fill="none" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Step 1: User Query -->
+  <rect x="40" y="60" width="170" height="80" rx="10" fill="#1c2333" stroke="#30363d" stroke-width="1.5"/>
+  <text x="125" y="92" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#f0f6fc">User Query</text>
+  <text x="125" y="116" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8b949e">"最近两天的 AI 项目"</text>
+
+  <!-- Arrow 1 -->
+  <line x1="210" y1="100" x2="260" y2="100" stroke="#30363d" stroke-width="2"/>
+  <polygon points="260,94 274,100 260,106" fill="#3fb950"/>
+
+  <!-- Step 2: Date Filter -->
+  <rect x="274" y="60" width="170" height="80" rx="10" fill="#1c2333" stroke="#3fb950" stroke-width="1.5"/>
+  <text x="359" y="92" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#3fb950">Date Filter</text>
+  <text x="359" y="116" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8b949e">created:&gt;=2026-07-28</text>
+
+  <!-- Arrow 2 -->
+  <line x1="444" y1="100" x2="494" y2="100" stroke="#30363d" stroke-width="2"/>
+  <polygon points="494,94 508,100 494,106" fill="#58a6ff"/>
+
+  <!-- Step 3: GitHub API -->
+  <rect x="508" y="60" width="170" height="80" rx="10" fill="#1c2333" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="593" y="92" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#58a6ff">GitHub Search API</text>
+  <text x="593" y="116" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8b949e">/search/repositories</text>
+
+  <!-- Arrow 3 -->
+  <line x1="678" y1="100" x2="728" y2="100" stroke="#30363d" stroke-width="2"/>
+  <polygon points="728,94 742,100 728,106" fill="#e3b341"/>
+
+  <!-- Step 4: Keyword + Star Filter -->
+  <rect x="742" y="60" width="170" height="80" rx="10" fill="#1c2333" stroke="#e3b341" stroke-width="1.5"/>
+  <text x="827" y="92" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#e3b341">Refine Results</text>
+  <text x="827" y="116" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8b949e">keywords · stars · exclude</text>
+
+  <!-- Arrow 4 -->
+  <line x1="912" y1="100" x2="962" y2="100" stroke="#30363d" stroke-width="2"/>
+  <polygon points="962,94 976,100 962,106" fill="#f0f6fc"/>
+
+  <!-- Step 5: Output -->
+  <rect x="976" y="60" width="180" height="80" rx="10" fill="#1c2333" stroke="#f0f6fc" stroke-width="1.5"/>
+  <text x="1066" y="92" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#f0f6fc">Table / List</text>
+  <text x="1066" y="116" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8b949e">项目 · 时间 · ★ · 名称</text>
+
+  <!-- Bottom label -->
+  <text x="600" y="175" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#484f58">Proxy auto-fallback · 10s timeout · GITHUB_TOKEN auth</text>
+</svg>
